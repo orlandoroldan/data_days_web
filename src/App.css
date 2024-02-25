@@ -1,0 +1,112 @@
+.main {
+    /* background-image: url("background.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: auto;
+     */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+
+  /* mirar @ media per tal que sempre surti en una línea */
+.menu ul {
+margin-top: 60px;
+margin-bottom: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left:10%;
+margin-right:10%;
+text-align:center;
+background:rgba(255, 255, 255, 0.5);
+border-radius:40px;
+}
+
+
+.menu li {
+font-size: 1.2em;
+line-height: 40px;
+height: 40px;
+display: inline;
+margin-left: 10px;
+margin-right: 10px;
+opacity:1;
+text-decoration-line: none;
+white-space: nowrap;
+}
+
+.menu #home {
+    font-style: italic;
+}
+
+.menu a {
+text-decoration: none;
+color: black;
+}
+
+a.link {
+color: blue;
+}
+
+/* .team-member {
+    text-align: center;
+    margin: 20px;
+    width: 150px;
+    height: 250px;
+    display: inline;
+  }
+  
+.team-member-image {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    display: block;
+}
+ */
+
+
+ .app-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    font:inherit;
+    font-family:'Hind', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif */
+    /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+
+ }
+
+ .team-member {
+    display: inline-block; /* Set to inline-block to display profiles horizontally */
+    margin: 30px; /* Adjust margin as needed */
+  }
+  
+  .team-member-image {
+    width: 150px; /* Adjust image width as needed */
+    height: 150px; /* Adjust image height as needed */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fills the circular frame */
+    display: block; /* Ensure proper display */
+  }
+  
+  .profile-content {
+    text-align: center; /* Center content within the profile */
+    margin-top:15px;
+}
+  
+  .titol-quisom {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  /* #aed-info, #members-info{
+
+  } */
+

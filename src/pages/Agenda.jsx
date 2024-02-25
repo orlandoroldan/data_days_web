@@ -38,7 +38,21 @@ const Workshop = ({ name, level, kind, description, date, time, place }) => {
                             hasCloseBtn={true}
                             isOpen={isOpen}
                             onClose={handleCloseModal}>
-                                <h1>Holi</h1>
+                                <Modal.Title>{name}</Modal.Title>
+                                <Modal.Body>
+                                    {description}
+                                    <p></p>
+                                    <p>Temàtica: {kind}</p>
+                                    <p>Data: {date}</p>
+                                    <p>Hora: {time}</p>
+                                    <p>Lloc: {place}</p>
+                                    <p>Nivell: {level} <span className={`circle circle-${level}`}></span></p>
+                                </Modal.Body>
+                                <div className="modal">
+                                    <div className='modal-header'>
+                                        <h3 className="modal-title">{name}</h3>
+                                    </div>
+                                </div>
                         </Modal>
                     </div>
 
@@ -66,9 +80,11 @@ const Agenda = () => {
             
             <Workshop 
             name="Xerrada Cryptocurrency"
-            level="Beginner"
+            level="Advanced"
             kind="Crypto"
-            description="..."
+            description="
+            In the volatile realm of cryptocurrency, digital assets dance to the rhythm of blockchain technology, where every transaction is a node in a decentralized symphony. From the towering peaks of Bitcoin to the obscure altcoins lurking in the depths of the market, the landscape is a kaleidoscope of speculation and innovation.
+            In the cryptoverse, bulls and bears engage in an eternal dance, as prices surge and plummet with the caprice of the wind. Investors ride the waves of volatility, seeking fortune amidst the chaos, while skeptics warn of bubbles waiting to burst."
             date="10/05"
             time="10h"
             place="A4202"

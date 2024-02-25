@@ -110,3 +110,26 @@ color: blue;
 
   } */
 
+
+  /* CIRCLE - AGENDA */
+  .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.circle-Beginner {
+  background-color: green;
+}
+
+.circle-Intermediate {
+  background-color: yellow;
+}
+
+.circle-Advanced {
+  background-color: red;
+}
+
+
+

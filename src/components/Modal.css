@@ -21,14 +21,11 @@
     
 }
 
-
 .modal-close-btn{
     margin: 5%;
-    background-color:#faa25d;
     padding-left:10px;
     padding-right:10px;
     padding-top:5px;
     padding-bottom:5px;
-    border-radius: 5px;
     /* backg */
 }

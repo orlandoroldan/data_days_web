@@ -17,15 +17,14 @@ const Menu = () => (
 
     <div className="App" style={{
         position:"absolute",
-        width: "70%", 
+        width:"100%",
         minHeight: "100%",
-        backgroundColor: "#9FD5A2",
-        marginLeft: "15%",
+        backgroundColor: "#5f64a0",//"#9FD5A2",
     }}> 
         <div className="menu">
           <Routes>
             <Route path="/" element={<Layout/>}>
-              <Route index element={<Home />}  id="home"/>
+              <Route index element={<Home />}/>
               <Route path="presentacio" element={<Presentacio />} />
               <Route path="quisom" element={<QuiSom />} />
               <Route path="agenda" element={<Agenda />} />

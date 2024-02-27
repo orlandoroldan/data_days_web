@@ -1,6 +1,7 @@
 import { React, useState, useRef, useEffect } from "react";
 import "./Modal.css"
 
+
 const Modal = ({ hasCloseBtn, isOpen, onClose, children }) => {
     const [isModalOpen, setModalOpen] = useState(isOpen);
     const modalRef = useRef(null);
@@ -37,7 +38,7 @@ const Modal = ({ hasCloseBtn, isOpen, onClose, children }) => {
     <dialog ref={modalRef} onKeyDown={handleKeyDown} className="dialog-agenda">
         {children}
         {hasCloseBtn && (
-        <button className="modal-close-btn" onClick={handleCloseModal}>
+        <button className="modal-close-btn btn btn-orange btn-smooth-transition" onClick={handleCloseModal}>
             Tanca
         </button>
         )}

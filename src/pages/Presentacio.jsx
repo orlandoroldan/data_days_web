@@ -3,16 +3,23 @@
 // Presentació
 const Presentacio = () => {
     return (
-      <div>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-        <h1>Hola</h1>
+      <div className="app-section">
+        <div id="presentacio-text">
+          <h1 className="titol-presentacio">
+            Què són els Data Days?
+          </h1>
+          <p>
+            Explicació Data Days.
+          </p>
+        </div>
+        <div className="container">
+          <div className="row align-items-start">
+          <div className="quest col-12 col-md-4">Quan?</div>
+          <div className="quest col-12 col-md-4">On?</div>
+          <div className="quest col-12 col-md-4">Qui?</div>
+          </div>
+
+        </div>
       </div>
     )
   };

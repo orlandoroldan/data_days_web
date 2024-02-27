@@ -11,30 +11,34 @@ ul {
   }
   
 
+/* ------------------------ MENU ------------------------ */
+
   /* mirar @ media per tal que sempre surti en una línea */
 .menu ul {
-margin-top: 60px;
-margin-bottom: 20px;
-padding-top: 20px;
-padding-bottom: 20px;
-margin-left:10%;
-margin-right:10%;
-text-align:center;
-background:rgba(255, 255, 255, 0.5);
-border-radius:40px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left:10%;
+  margin-right:10%;
+  text-align:center;
+  background:rgba(255, 255, 255, 0.8);
+  border-radius:40px;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
 
 
 .menu li {
-font-size: 1.2em;
-line-height: 40px;
-height: 40px;
-display: inline;
-margin-left: 10px;
-margin-right: 10px;
-opacity:1;
-text-decoration-line: none;
-white-space: nowrap;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  opacity:1;
+  text-decoration-line: none;
+  white-space: nowrap;
 }
 
 .menu #home {
@@ -42,14 +46,58 @@ white-space: nowrap;
 }
 
 .menu a {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
+
 }
 
-a.link {
-color: blue;
+
+.menu a:hover{
+  color: #5f64a0;
+  moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
 }
 
+
+/* -------------------------- APP ---------------------- */
+
+.app-section {
+  padding-left: 15%;
+  padding-right: 15%;
+
+  font-family:"Poppins", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+
+  text-align: justify;
+  color:white;
+}
+
+
+.titol-quisom, .titol-agenda, .titol-presentacio{
+  margin-top: 50px;
+
+  font-size: 20px;
+  color: #f9c95d;
+}
+
+.btn.btn-orange{
+  background-color:#faa25d;
+  color:black;
+  align-items: center;
+}
+
+
+.btn.btn-smooth-transition:hover{
+  background-color: black;
+  color:white;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
 /* .team-member {
     text-align: center;
     margin: 20px;
@@ -68,51 +116,39 @@ color: blue;
 }
  */
 
+ /* -------------------- QUI SOM? --------------------------- */
+ 
+ .team-member{
+  justify-content: center;
+  width:100%;
+  display:block;
+  gap:16px;
+  align-items: center;
+  padding-top:15px;
+}
 
- .app-section {
-    padding-left: 10%;
-    padding-right: 10%;
-    font:inherit;
-    font-family:'Hind', sans-serif;
-    font-size: 15px;
-    text-align: justify;
 
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif */
-    /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
-
- }
-
- .team-member {
-    display: inline-block; /* Set to inline-block to display profiles horizontally */
-    margin: 30px; /* Adjust margin as needed */
-  }
-  
   .team-member-image {
-    width: 150px; /* Adjust image width as needed */
-    height: 150px; /* Adjust image height as needed */
+    width: 140px; /* Adjust image width as needed */
+    height: 140px; /* Adjust image height as needed */
     border-radius: 50%; /* Make the image circular */
     object-fit: cover; /* Ensure the image fills the circular frame */
-    display: block; /* Ensure proper display */
+    border: 4px solid rgba(0,0,0,0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .profile-content {
+.profile-content {
     text-align: center; /* Center content within the profile */
     margin-top:15px;
 }
+
   
-  .titol-quisom {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
-  }
-
-  /* #aed-info, #members-info{
-
-  } */
 
 
-  /* CIRCLE - AGENDA */
-  .circle{
+/* ------------------  AGENDA ---------------------- */
+.circle{
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -130,6 +166,115 @@ color: blue;
 .circle-Advanced {
   background-color: red;
 }
+
+.card.profile.workshop{
+  width: 50%;
+  background-color:inherit;
+  border:none;
+  display: inline-block;
+  padding:4%;
+}
+
+.workshop-title {
+  color:white;
+  height: "20%"; 
+  background-color: black;
+}
+
+.workshop-content {
+  background-color: white;
+}
+
+.pregunta-presentacio {
+  width: 33%;
+  padding: 3%;
+  background:rgba(255, 255, 255, 0.5);
+  margin:5%;
+  text-align: center;
+}
+
+#presentacio-text{
+  margin-bottom:40px;
+}
+
+#presentacio-cards{
+  width:"100%";
+}
+
+
+.quest{
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.5) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+
+
+/* --------------------- HOME -------------------------- */
+
+.home-video-container{
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow:hidden;
+  /* padding:25px; */
+  padding-bottom:25px;
+
+}
+
+.home-video-container > video{
+  min-width:100%;
+  max-height:100%;
+  /* border-radius: 10px; */
+  /* border: 10px solid rgba(255, 255, 255, 0.8); */
+
+}
+
+.home-text{
+  text-align: right;
+  color:#5f64a0;
+  font-size:30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius:15px;
+  padding:15px;
+  margin-right:10px;
+  font-family:"Poppins", Helvetica, Arial, sans-serif;
+
+}
+
+
+/* -------------- MEDIA MAX-WIDTH: 768px ------------------- */
+
+@media (max-width: 768px){
+  .card.profile.workshop{
+    width: 100% !important;
+  }
+
+  .pregunta-presentacio {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .home-video-container > video{
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .home-text{
+    font-size: 25px;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    margin-right:10px;
+
+  }
+}
+
+
+
+
 
 
 

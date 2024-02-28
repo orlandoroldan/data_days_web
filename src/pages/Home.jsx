@@ -8,7 +8,7 @@
 
 const Home = () => {
     return (
-    <div style={{marginBottom: "100px"}}>
+    <div class="home-section" style={{marginBottom: "100px"}}>
       <div class="home-video-container">
         <video id="home-video" width="320" height="240" autoPlay="true" muted loop>
           <source src="/video_izan_cropped.mp4" type="video/mp4"/>

@@ -19,7 +19,7 @@ const Menu = () => (
         position:"absolute",
         width:"100%",
         minHeight: "100%",
-        backgroundColor: "#5f64a0",//"#9FD5A2",
+        backgroundColor: "#5fa7b9",//"#9FD5A2",
     }}> 
         <div className="menu">
           <Routes>

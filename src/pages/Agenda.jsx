@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import Modal from '../components/Modal';
+import Modal from '../components/Modal/Modal';
 import React, {useState} from "react"
 // name: name of the workshop
 // level: Beginner, Intermediate, Advanced

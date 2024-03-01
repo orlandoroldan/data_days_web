@@ -15,12 +15,7 @@ const Menu = () => (
   <div className="main" style={{position: "absolute", width:"100%", minHeight:"100%"
 }}>
 
-    <div className="App" style={{
-        position:"absolute",
-        width:"100%",
-        minHeight: "100%",
-        backgroundColor: "#5fa7b9",//"#9FD5A2",
-    }}> 
+    <div className="pageWrapper"> 
         <div className="menu">
           <Routes>
             <Route path="/" element={<Layout/>}>

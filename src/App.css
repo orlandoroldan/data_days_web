@@ -3,8 +3,18 @@
     /* background-repeat: no-repeat; */
     /* background-size: auto;
      */
-     overflow: hidden;
 }
+
+html {
+  scrollbar-width: 0px;
+  scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+} 
+
 
 ul {
     list-style-type: none;
@@ -16,6 +26,7 @@ ul {
 
 .menu {
   overflow:hidden;
+  display:block;
 }
 
   /* mirar @ media per tal que sempre surti en una línea */
@@ -33,6 +44,7 @@ ul {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   position:fixed;
   width:100%;
+  z-index:1;
 
 }
 
@@ -72,6 +84,14 @@ ul {
 
 /* -------------------------- APP ---------------------- */
 
+.pageWrapper {
+  position:"absolute";
+  width:"100%";
+  min-height: "100%";
+  background-color: #5fa7b9;
+}
+
+
 .app-section {
   margin-top:110px;
   padding-left: 15%;
@@ -82,6 +102,10 @@ ul {
 
   text-align: justify;
   color:white;
+
+  position:relative;
+  z-index: 0;
+  overflow:hidden;
 }
 
 
@@ -242,45 +266,109 @@ ul {
   font-size: 15px;
   text-align: justify;
   color:white;
+  overflow:hidden;
 }
 
 
 .home-video-container{
+  display:block;
   height: 100%;
+  width:100%;
+
+  left:0;
   object-fit: cover;
-  overflow:hidden;
-  /* padding:7%; */
-  /* padding-top:3%; */
-  padding-bottom:3%;
-  margin-left:auto;
-  margin-right:auto;
-  /* background-color:  #c3e1e9; */
-  margin-bottom:20px;
+  top:0;
 
 }
 
 .home-video-container > video{
-  min-width:100%;
-  max-height:100%;
-  /* border-radius: 20px; */
-  /* border: 10px solid rgba(255, 255, 255, 0.8); */
+  width:100%;
+  height:100%;
+  position:absolute;
+  object-fit: cover;
 
+}
+
+.home-info-container{
+  position: fixed;
+  left: 0;
+  bottom: 10%;
+  width:fit-content;
+  transform:translateX(-92%);
+  moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding-right:5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+}
+
+.home-info-container:hover{
+  transform:translateX(0);
+  moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .home-text{
   text-align: right;
-  color:#5f64a0;
-  font-size:30px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius:15px;
+  color:white;
+  font-size:20px;
+  /* border-radius:15px; */
   padding:15px;
-  margin-right:10px;
+  /* margin-right:10px; */
   font-family:"Poppins", Helvetica, Arial, sans-serif;
+  display:flex;
+  /* background-color: rgba(255, 255, 255, 0.85); */
+  background-color: #cb3f4b;
+  width: fit-content;
 
 }
 
+.sobresurt{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  writing-mode: tb-rl;
+  text-orientation: sideways-right;
+  text-align: center;
+  margin-left:10px;
+}
 
+
+.sobresurt > p {
+  margin:0;
+  font-size: 17px;
+  color:white;
+  font-weight: 600;
+}
+
+
+
+/* ----------------PRESENTACIÓ ----------------------------- */
+
+.FAQsection h3{
+  font-size: 1.25rem;
+  font-weight:500;
+  margin-bottom:1.5rem;
+  margin-top:1.75rem;
+}
+
+
+.FAQsection button{
+  background-color: #5fa7b9;
+  color:white;
+}
+
+.accordion {
+  --bs-accordion-btn-icon-transform: rotate(180deg);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-up' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z'/%3E%3C/svg%3E");
+}
 /* -------------- MEDIA MAX-WIDTH: 768px ------------------- */
+
 
 @media (max-width: 768px){
   .card.profile.workshop{
@@ -296,10 +384,37 @@ ul {
 
   .home-text{
     font-size: 25px;
-    border: 5px solid rgba(255, 255, 255, 0.9);
-    margin-right:10px;
+    /* border: 5px solid rgba(255, 255, 255, 0.9); */
+    /* margin-right:10px; */
 
   }
+
+
+  /* IDEA: SI LA PANTALLA ÉS DE MÒBIL, POSEM LO VERMELL ABAIX I EL VÍDEO ADALT, 
+  OCUPANT TOTA LA PANTALLA */
+  .home-info-container{
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    width:fit-content;
+    transform:translateX(0);
+    /* moz-transition: all .2s ease-in-out; */
+    /* -o-transition: all .2s ease-in-out; */
+    /* -webkit-transition: all .2s ease-in-out; */
+    transition: all .2s ease-in-out;
+    padding-right:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+  }
+  
+  /* .home-info-container:hover{
+    transform:translateX(0);
+    moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  } */
 
 }
 

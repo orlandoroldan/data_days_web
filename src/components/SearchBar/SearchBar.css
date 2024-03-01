@@ -3,11 +3,18 @@
 /* a editar */
 .searchBar {
 
-    width: 100%;
+    width: 60%;
     margin-bottom: 50px;
-    padding: 20px;
+    padding: 10px;
     border: none;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 8px;
+    color:black;
 
+}
+
+@media (max-width: 768px){
+
+    .searchBar{
+        width: 100%;
+    }
 }

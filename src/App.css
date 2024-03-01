@@ -187,61 +187,6 @@ ul {
 
 
 /* ------------------  AGENDA ---------------------- */
-.circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-.circle-Beginner {
-  background-color: green;
-}
-
-.circle-Intermediate {
-  background-color: yellow;
-}
-
-.circle-Advanced {
-  background-color: red;
-}
-
-.card.profile.workshop{
-  width: 50%;
-  background-color:inherit;
-  border:none;
-  display: inline-block;
-  padding:4%;
-}
-
-.workshop-title {
-  color:white;
-  height: "20%"; 
-  /* background-color: #b9715f; */
-  background-color:#386671;
-  /* background-color:#895244; */
-}
-
-.workshop-content {
-  background-color: white;
-}
-
-.pregunta-presentacio {
-  width: 33%;
-  padding: 3%;
-  background:rgba(255, 255, 255, 0.5);
-  margin:5%;
-  text-align: center;
-}
-
-#presentacio-text{
-  margin-bottom:40px;
-}
-
-#presentacio-cards{
-  width:"100%";
-}
-
 
 .quest{
     align-items: center;
@@ -349,6 +294,25 @@ ul {
 
 /* ----------------PRESENTACIÓ ----------------------------- */
 
+
+#presentacio-text{
+  margin-bottom:40px;
+}
+
+
+#presentacio-cards{
+  width:"100%";
+}
+
+
+.pregunta-presentacio {
+  width: 33%;
+  padding: 3%;
+  background:rgba(255, 255, 255, 0.5);
+  margin:5%;
+  text-align: center;
+}
+
 .FAQsection h3{
   font-size: 1.25rem;
   font-weight:500;
@@ -366,6 +330,10 @@ ul {
   --bs-accordion-btn-icon-transform: rotate(180deg);
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E");
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-up' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z'/%3E%3C/svg%3E");
+}
+
+.collappse-visibility {
+  visibility: visible !important;
 }
 /* -------------- MEDIA MAX-WIDTH: 768px ------------------- */
 

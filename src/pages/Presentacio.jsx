@@ -49,7 +49,7 @@ const Presentacio = () => {
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body" style={{}}>
+                        <div class="collappse-visibility accordion-body">
                             Content for Accordion Item #1 goes here.
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Presentacio = () => {
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="collappse-visibility accordion-body">
                             Content for Accordion Item #2 goes here.
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Presentacio = () => {
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                        <div class="collappse-visibility accordion-body">
                             Content for Accordion Item #3 goes here.
                         </div>
                     </div>

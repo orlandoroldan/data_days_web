@@ -30,7 +30,7 @@ const Presentacio = () => {
           </h1>
           <div class="FAQsection">
             <h3>Sobre l'esdeveniment</h3>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion mimi accordion-flush" id="accordionFlushExample">
               {/* <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -42,9 +42,9 @@ const Presentacio = () => {
                 </div>
               </div> */}
               <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="accordion-item mimi">
+                    <h2 class="accordion-header mimi">
+                        <button class="accordion-button mimi collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Accordion Item #1
                         </button>
                     </h2>
@@ -54,9 +54,9 @@ const Presentacio = () => {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="accordion-item mimi">
+                    <h2 class="accordion-header mimi">
+                        <button class="accordion-button mimi collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Accordion Item #2
                         </button>
                     </h2>
@@ -66,9 +66,9 @@ const Presentacio = () => {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="accordion-item mimi">
+                    <h2 class="accordion-header mimi">
+                        <button class="accordion-button mimi collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Accordion Item #3
                         </button>
                     </h2>
@@ -84,6 +84,56 @@ const Presentacio = () => {
           <div class="FAQsection">
             <h3>Participants</h3>
             <div class="accordion accordion-flush">
+            <div class="accordion mimi accordion-flush" id="accordionFlushExample">
+              {/* <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Puc venir només a una xerrada?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Sí, és clar!</div>
+                </div>
+              </div> */}
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item mimi">
+                    <h2 class="accordion-header mimi">
+                        <button class="accordion-button mimi collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="collappse-visibility accordion-body">
+                            Content for Accordion Item #1 goes here.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mimi">
+                    <h2 class="accordion-header mimi">
+                        <button class="accordion-button mimi collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="collappse-visibility accordion-body">
+                            Content for Accordion Item #2 goes here.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mimi">
+                    <h2 class="accordion-header mimi">
+                        <button class="accordion-button mimi collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="collappse-visibility accordion-body">
+                            Content for Accordion Item #3 goes here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
             </div>
           </div>
           <div class="FAQsection">

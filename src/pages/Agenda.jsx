@@ -1,14 +1,20 @@
 
-import React, {useState} from "react"
+import React, {useState} from "react";
 import SearchBar from '../components/SearchBar/SearchBar';
+import Filter from '../components/Filter/Filter';
 import Workshop from "../components/Workshop/Workshop";
-import { data_agenda } from '../data/data-agenda.jsx'
+import { data_agenda } from '../data/data-agenda.jsx';
 
 
 const Agenda = () => {
     // const workshops = useMany<{key,title,}>({resource, ids}).data?.data
     const [inputValue, setInputValue] = useState("");
-
+    const [activeFilter, setActiveFilter] = useState("");    
+    const levels = ["Beginner", "Advanced"];
+    
+    const [activeFilter2, setActiveFilter2] = useState("");    
+    const days = ["11 de maig", "12 de maig"];
+    
     return (
         <div id='agenda-section' className='app-section'>
             <div>
@@ -16,18 +22,78 @@ const Agenda = () => {
                     <p>Aquí ve una mica d'explicació. Quins dies, quines temàtiques, quins nivells.</p>
             </div>
             <div className='agenda'>
-                <SearchBar
-                    onChange = {(e) => setInputValue(e.target.value)} 
-                />
+                <div class="container">
+                        <SearchBar
+                            onChange = {(e) => setInputValue(e.target.value)} 
+                        />
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="container">
+                                <h6>
+                                Filtre per nivells
+                                </h6>
+                            <div class="row">
+                            {
+                                levels.map((level, index) => {
+                                    return(
+                                        <Filter
+                                            level={level}
+                                            isActive={level === activeFilter}
+                                            onClick={(e) => {
+                                                const el = e.target;
+                                                el.textContent !== activeFilter
+                                                    ? setActiveFilter(level)
+                                                    : setActiveFilter("");
+                                            }}
+                                        />
+                                    );
+                                })}
+                            </div>
+                            </div>
+                        </div>                        
+                        <div class="col-12 col-md-6">
+                            <div class="container">
+                                <h6>
+                                    Filtre per data
+                                </h6>
+                                <div class="row">
+                            {
+                                days.map((day, index) => {
+                                    return(
+                                        <Filter
+                                            level={day}
+                                            isActive={day === activeFilter2}
+                                            onClick={(e) => {
+                                                const el = e.target;
+                                                el.textContent !== activeFilter2
+                                                    ? setActiveFilter2(day)
+                                                    : setActiveFilter2("");
+                                            }}
+                                        />
+                                    );
+                                })}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {data_agenda
                 .filter((item) => {
-
 // AQUÍ TAMBÉ ESTEM FILTRANT SEGONS LA DESCRIPCIÓ                    
-                    return inputValue.toLowerCase() === "" ? item : (item.title.toLowerCase().includes(inputValue) || item.description.toLowerCase().includes(inputValue));
-                }).map((item) => (
+                    return inputValue.toLowerCase() === "" ? item : (item.title.toLowerCase().includes(inputValue.toLowerCase()) || item.description.toLowerCase().includes(inputValue.toLowerCase()));
+                })
+                .filter((item) => {
+                    return item.level.includes(activeFilter)
+                })
+                .filter((item) => {
+                    return item.date.includes(activeFilter2)
+                })
+                .map((item) => (
                     <Workshop
                         title={item.title}
-                        level={item.title}
+                        level={item.level}
                         kind={item.kind}
                         description={item.description}
                         date={item.date}

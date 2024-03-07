@@ -1,3 +1,19 @@
+
+.accordion.mimi {
+  width:200%;
+  transform:translateX(-11%);
+}
+
+.accordion-item.mimi{
+  padding-left:10%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.accordion-button.mimi{
+  background-color: transparent;
+  color:white;
+}
+
 .main {
     /* background-image: url("background.png"); */
     /* background-repeat: no-repeat; */
@@ -88,7 +104,7 @@ ul {
   position:"absolute";
   width:"100%";
   min-height: "100%";
-  background-color: #5fa7b9;
+  background-color: #81b8c7;
 }
 
 
@@ -123,14 +139,20 @@ ul {
 }
 
 .btn.btn-orange{
-  background-color:#faa25d;
+  /* background-color:#FAA25D; */
+  /* background-color: #b9715f; */
+  /* background-color:#895244; */
   color:black;
   align-items: center;
+  border-style:solid ;
+  border-color:#386671;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-width:2px;
 }
 
 
 .btn.btn-smooth-transition:hover{
-  background-color: black;
+  background-color: #386671 ;
   color:white;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -270,6 +292,7 @@ ul {
   /* background-color: rgba(255, 255, 255, 0.85); */
   background-color: #cb3f4b;
   width: fit-content;
+  padding-top:20px;
 
 }
 
@@ -350,30 +373,32 @@ ul {
 
 
 
-  .home-text{
-    font-size: 25px;
-    /* border: 5px solid rgba(255, 255, 255, 0.9); */
-    /* margin-right:10px; */
-
-  }
-
-
   /* IDEA: SI LA PANTALLA ÉS DE MÒBIL, POSEM LO VERMELL ABAIX I EL VÍDEO ADALT, 
   OCUPANT TOTA LA PANTALLA */
   .home-info-container{
     position: fixed;
     left: 0;
-    bottom: 10%;
+    bottom: 5%;
     width:fit-content;
     transform:translateX(0);
     /* moz-transition: all .2s ease-in-out; */
     /* -o-transition: all .2s ease-in-out; */
     /* -webkit-transition: all .2s ease-in-out; */
-    transition: all .2s ease-in-out;
     padding-right:5px;
     padding-top:10px;
     padding-bottom:10px;
     padding-left:10px;
+  }
+  
+  .sobresurt > p {
+    margin:0;
+    font-size: 15px;
+    color:white;
+    font-weight: 600;
+  }
+
+  .home-text{
+    font-size:17px;
   }
   
   /* .home-info-container:hover{

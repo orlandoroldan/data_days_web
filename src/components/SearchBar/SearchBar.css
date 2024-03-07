@@ -2,9 +2,10 @@
 
 /* a editar */
 .searchBar {
-
-    width: 60%;
+    align-items: center;
+    width: 45.72%;
     margin-bottom: 50px;
+    margin-left:12px;
     padding: 10px;
     border: none;
     border-radius: 8px;
@@ -12,9 +13,10 @@
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 900px){
 
     .searchBar{
         width: 100%;
+        margin-left:0;
     }
 }

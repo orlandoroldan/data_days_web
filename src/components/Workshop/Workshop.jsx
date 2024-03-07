@@ -3,6 +3,14 @@ import Modal from '../Modal/Modal';
 import "./Workshop.css"
 import React, {useState} from "react"
 
+
+const level_to_color = (level) => {
+    if (level === "Beginner"){
+        return "#dcd4b1";
+    }
+    return "#d3c3e9";
+}
+
 const Workshop = ({ title, level, kind, description, date, time, place }) => {
     // modal
     const [isOpen, setModalOpen] = useState(false);
@@ -18,7 +26,7 @@ const Workshop = ({ title, level, kind, description, date, time, place }) => {
                     <div class="workshop-title p-3 rounded-top">
                         <h3>{title}</h3>
                     </div>
-                    <div class="workshop-content p-3 rounded-bottom">
+                    <div class="workshop-content p-3 rounded-bottom" style={{backgroundColor: level_to_color(`${level}`)}}>
                         <p class="card-text">Nivell: {level}</p>
                         <p class="card-text">Data: {date}</p>
                         <a href="#" class="btn btn-smooth-transition btn-orange" onClick={() => setModalOpen(true)}>Saber-ne més</a>
@@ -39,7 +47,7 @@ const Workshop = ({ title, level, kind, description, date, time, place }) => {
                                     <p>Data: {date}</p>
                                     <p>Hora: {time}</p>
                                     <p>Lloc: {place}</p>
-                                    <p>Nivell: {level} <span className={`circle circle-${level}`}></span></p>
+                                    <p>Nivell: {level} </p>
                                 </Modal.Body>
                                 <div className="modal">
                                     <div className='modal-header'>

@@ -2,7 +2,14 @@ import { React, useState, useRef, useEffect } from "react";
 import "./Modal.css"
 
 
-const Modal = ({ hasCloseBtn, isOpen, onClose, children }) => {
+const level_to_color = (level) =>{
+    if (level == "Beginner") {
+        return "#faa25d";
+    }
+    return "#cb3f4b";
+}
+
+const Modal = ({ hasCloseBtn, isOpen, onClose, level, children }) => {
     const [isModalOpen, setModalOpen] = useState(isOpen);
     const modalRef = useRef(null);
 
@@ -68,7 +75,7 @@ Modal.Footer = function ModalFooter(props){
 
 Modal.Title = function ModalTitle(props) {
     return (
-        <h3 className="modal-title">
+        <h3 className="modal-title" style={{backgroundColor:level_to_color(`${props.children}`)}}>
             {props.children}
         </h3>
     )

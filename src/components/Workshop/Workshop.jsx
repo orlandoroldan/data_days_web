@@ -11,7 +11,7 @@ const level_to_color = (level) => {
     return "#d3c3e9";
 }
 
-const Workshop = ({ title, level, kind, description, date, time, place }) => {
+const Workshop = ({ title, level, kind, small_description, description, date, time, place }) => {
     // modal
     const [isOpen, setModalOpen] = useState(false);
     
@@ -23,14 +23,17 @@ const Workshop = ({ title, level, kind, description, date, time, place }) => {
         <>
             <div class="card profile workshop">
                 <div class="card-body profile-title p-0"> 
-                    <div class="workshop-title p-3 rounded-top">
-                        <h3>{title}</h3>
+                    <div class="workshop-title p-3 rounded-top" style={{"textAlign":"center"}}>
+                        <h7>{title}</h7>
                     </div>
                     <div class="workshop-content p-3 rounded-bottom" style={{backgroundColor: level_to_color(`${level}`)}}>
-                        <p class="card-text">Nivell: {level}</p>
-                        <p class="card-text">Data: {date}</p>
-                        <a href="#" class="btn btn-smooth-transition btn-orange" onClick={() => setModalOpen(true)}>Saber-ne més</a>
-
+                        <div style={{height:"80px", textAlign: "justify", textJustify: "inter-word", fontSize:"13px"}}>
+                            <p>{small_description}</p>
+                        </div>
+                        <div style={{fontSize:"13px", paddingBottom:"10px", paddingTop:"7px"}}>
+                            <span>Nivell: {level}</span><span style={{float:"right"}}>Data: {date}</span>
+                        </div>
+                            <a href="#" class="btn btn-smooth-transition btn-orange" onClick={() => setModalOpen(true)} style={{marginLeft:"auto", marginRight:"auto", display:"block", width:"40%", fontSize:"14px"}}>Saber-ne més</a>
                         {/* <dialog id="modal" class="modal">
                             <button id="closeModal" class="modal-close-btn">Close</button>
                             <p>hello</p>
@@ -49,11 +52,6 @@ const Workshop = ({ title, level, kind, description, date, time, place }) => {
                                     <p>Lloc: {place}</p>
                                     <p>Nivell: {level} </p>
                                 </Modal.Body>
-                                <div className="modal">
-                                    <div className='modal-header'>
-                                        <h3 className="modal-title">{name}</h3>
-                                    </div>
-                                </div>
                         </Modal>
                     </div>
 
@@ -66,6 +64,7 @@ Workshop.propTypes = {
   name: PropTypes.string.isRequired,
   level: PropTypes.string.isRequired,
   kind: PropTypes.string.isRequired,
+  small_description:PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   date: PropTypes.number.isRequired, 
   time: PropTypes.string.isRequired,

@@ -17,20 +17,21 @@ const Agenda = () => {
     
     return (
         <div id='agenda-section' className='app-section'>
-            <div>
+            <div style={{paddingBottom:"20px"}}>
                     <h1 className='titol-agenda'>Agenda</h1>
-                    <p>Aquí ve una mica d'explicació. Quins dies, quines temàtiques, quins nivells.</p>
+                    <p>Al llarg de l'11 i 12 de maig tindran llocs els Data Days, oferint un conjunt ric i divers de xerrades, tallers i activitats. <br></br>
+                        Data Days ofereix dos possibles tracks: "Beginner Friendly" i "Advanced". Dins el primer s'inscriuen les xerrades i tallers 
+                        que poden seguir-se activament amb coneixements bàsics o nuls, per introduir-te al món de la ciència de dades. El segon inclou 
+                        continguts que requereixen de coneixements previs i s'endinsen en temàtiques més concretes i avançades. Tanmateix, si és un tema que
+                        realment t'interessa, que no et tiri enrere!</p>
             </div>
             <div className='agenda'>
                 <div class="container">
-                        <SearchBar
-                            onChange = {(e) => setInputValue(e.target.value)} 
-                        />
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <div class="container">
                                 <h6>
-                                Filtre per nivells
+                                Filtre per track
                                 </h6>
                             <div class="row">
                             {
@@ -77,6 +78,9 @@ const Agenda = () => {
                             </div>
                         </div>
                     </div>
+                    <SearchBar
+                            onChange = {(e) => setInputValue(e.target.value)} 
+                        />
                 </div>
 
                 {data_agenda
@@ -95,6 +99,7 @@ const Agenda = () => {
                         title={item.title}
                         level={item.level}
                         kind={item.kind}
+                        small_description={item.small_description}
                         description={item.description}
                         date={item.date}
                         time={item.time} 

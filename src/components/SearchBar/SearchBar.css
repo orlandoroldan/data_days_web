@@ -4,12 +4,13 @@
 .searchBar {
     align-items: center;
     width: 45.72%;
-    margin-bottom: 50px;
     margin-left:12px;
     padding: 10px;
     border: none;
     border-radius: 8px;
     color:black;
+    margin-top:15px;
+    margin-bottom:30px;
 
 }
 

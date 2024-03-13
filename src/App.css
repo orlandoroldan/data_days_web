@@ -1,0 +1,428 @@
+
+.accordion.mimi {
+  width:200%;
+  transform:translateX(-11%);
+}
+
+.accordion-item.mimi{
+  padding-left:10%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.accordion-button.mimi{
+  background-color: transparent;
+  color:white;
+}
+
+.main {
+    /* background-image: url("background.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: auto;
+     */
+}
+
+html {
+  scrollbar-width: 0px;
+  scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+} 
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+
+/* ------------------------ MENU ------------------------ */
+
+.menu {
+  overflow:hidden;
+  display:block;
+}
+
+  /* mirar @ media per tal que sempre surti en una línea */
+.menu ul {
+  /* margin-top: 60px; */
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* margin-left:10%; */
+  /* margin-right:10%; */
+  text-align:center;
+  /* background:rgb(255, 255, 255); */
+  /* border-radius:40px; */
+  /* border: 4px solid rgba(255, 255, 255, 0.7); */
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  position:fixed;
+  width:100%;
+  z-index:1;
+  background-color: rgba(255, 255, 255, 0.95);
+
+}
+
+
+.menu li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  display: inline;
+  margin-left: 3%;
+  margin-right: 3%;
+  opacity:1;
+  text-decoration-line: none;
+  white-space: nowrap;
+}
+
+.menu #home {
+    font-style: italic;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.menu a:hover{
+  color: #5f64a0;
+  moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
+}
+
+
+/* -------------------------- APP ---------------------- */
+
+.pageWrapper {
+  position:"absolute";
+  width:"100%";
+  min-height: "100%";
+  background-color: #81b8c7;
+}
+
+
+.app-section {
+  margin-top:110px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 70px;
+  font-family:"Poppins", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+
+  text-align: justify;
+  color:black;
+
+  position:relative;
+  z-index: 0;
+  overflow:hidden;
+}
+
+
+#qui-som-equip{
+  padding-top:50px;
+}
+
+.titol-quisom, .titol-agenda, .titol-presentacio{
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #c3e1e9;
+  text-align: center;
+  font-weight:550;
+  font-size: 27px;
+}
+
+.btn.btn-orange{
+  /* background-color:#FAA25D; */
+  /* background-color: #b9715f; */
+  /* background-color:#895244; */
+  color:black;
+  align-items: center;
+  border-style:solid ;
+  border-color:#386671;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-width:2px;
+
+}
+
+
+.btn.btn-smooth-transition:hover{
+  background-color: #386671 ;
+  color:white;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+/* .team-member {
+    text-align: center;
+    margin: 20px;
+    width: 150px;
+    height: 250px;
+    display: inline;
+  }
+  
+.team-member-image {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    display: block;
+}
+ */
+
+ /* -------------------- QUI SOM? --------------------------- */
+ 
+ .team-member{
+  justify-content: center;
+  width:100%;
+  display:block;
+  gap:16px;
+  align-items: center;
+  padding-top:15px;
+}
+
+
+  .team-member-image {
+    width: 140px; /* Adjust image width as needed */
+    height: 140px; /* Adjust image height as needed */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fills the circular frame */
+    border: 4px solid rgba(0,0,0,0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.profile-content {
+    text-align: center; /* Center content within the profile */
+    margin-top:15px;
+}
+
+  
+
+
+/* ------------------  AGENDA ---------------------- */
+
+.quest{
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.5) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+
+
+/* --------------------- HOME -------------------------- */
+
+
+/* possiblement fer app-section i modificar */
+.home-section {
+  margin-top:50px;
+  width:100%;
+  font-family:"Poppins", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  color:white;
+  overflow:hidden;
+}
+
+
+.home-video-container{
+  display:block;
+  height: 100%;
+  width:100%;
+
+  left:0;
+  object-fit: cover;
+  top:0;
+
+}
+
+.home-video-container > video{
+  width:100%;
+  height:100%;
+  position:absolute;
+  object-fit: cover;
+
+}
+
+.home-info-container{
+  position: fixed;
+  left: 0;
+  bottom: 10%;
+  width:fit-content;
+  transform:translateX(-92%);
+  moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding-right:5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+}
+
+.home-info-container:hover{
+  transform:translateX(0);
+  moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.home-text{
+  text-align: right;
+  color:white;
+  font-size:20px;
+  /* border-radius:15px; */
+  padding:15px;
+  /* margin-right:10px; */
+  font-family:"Poppins", Helvetica, Arial, sans-serif;
+  display:flex;
+  /* background-color: rgba(255, 255, 255, 0.85); */
+  background-color: #cb3f4b;
+  width: fit-content;
+  padding-top:20px;
+
+}
+
+.sobresurt{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  writing-mode: tb-rl;
+  text-orientation: sideways-right;
+  text-align: center;
+  margin-left:10px;
+}
+
+
+.sobresurt > p {
+  margin:0;
+  font-size: 17px;
+  color:white;
+  font-weight: 600;
+}
+
+
+
+/* ----------------PRESENTACIÓ ----------------------------- */
+
+
+#presentacio-text{
+  margin-bottom:40px;
+}
+
+
+#presentacio-cards{
+  width:"100%";
+}
+
+
+.pregunta-presentacio {
+  width: 33%;
+  padding: 3%;
+  background:rgba(255, 255, 255, 0.5);
+  margin:5%;
+  text-align: center;
+}
+
+
+.FAQsection h3{
+  font-size: 1.1rem;
+  font-weight:300;
+  margin-top:1.75rem;
+}
+
+.FAQquestion{
+  font-size:0.95rem;
+  padding-top:11px;
+  font-weight:600;
+}
+
+.FAQanswer{
+  font-size:0.9rem;
+  padding-top:7px;
+  padding-bottom:10px;
+  font-weight:400;
+}
+
+.accordion {
+  --bs-accordion-btn-icon-transform: rotate(180deg);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-up' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z'/%3E%3C/svg%3E");
+}
+
+.collappse-visibility {
+  visibility: visible !important;
+}
+/* -------------- MEDIA MAX-WIDTH: 768px ------------------- */
+
+
+@media (max-width: 768px){
+  .card.profile.workshop{
+    width: 100% !important;
+  }
+
+  .pregunta-presentacio {
+    width: 100%;
+    padding: 5%;
+  }
+
+
+
+  /* IDEA: SI LA PANTALLA ÉS DE MÒBIL, POSEM LO VERMELL ABAIX I EL VÍDEO ADALT, 
+  OCUPANT TOTA LA PANTALLA */
+  .home-info-container{
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    width:fit-content;
+    transform:translateX(0);
+    /* moz-transition: all .2s ease-in-out; */
+    /* -o-transition: all .2s ease-in-out; */
+    /* -webkit-transition: all .2s ease-in-out; */
+    padding-right:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+  }
+  
+  .sobresurt > p {
+    margin:0;
+    font-size: 15px;
+    color:white;
+    font-weight: 600;
+  }
+
+  .home-text{
+    font-size:17px;
+  }
+  
+  /* .home-info-container:hover{
+    transform:translateX(0);
+    moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  } */
+
+}
+
+
+
+
+
+
+

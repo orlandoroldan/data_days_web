@@ -1,0 +1,31 @@
+.dialog-agenda{
+    background-color: #ffffff;
+    color:black;
+    width:75%;
+    border-radius: 5px;
+
+}
+
+.modal-title{
+    padding:20px;
+    padding-left:5%;
+    padding-right:20%;
+    color: black;
+    background-color: rgb(203, 184, 159);
+    font-weight: 800;
+    font-size:20px;
+}
+
+.modal-body{
+    margin:5%;
+    
+}
+
+.modal-close-btn{
+    margin: 5%;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    /* backg */
+}

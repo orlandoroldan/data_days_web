@@ -37,16 +37,10 @@ ul {
 
 /* mirar @ media per tal que sempre surti en una línea */
 .menu ul {
-  /* margin-top: 60px; */
   margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
-  /* margin-left:10%; */
-  /* margin-right:10%; */
   text-align: center;
-  /* background:rgb(255, 255, 255); */
-  /* border-radius:40px; */
-  /* border: 4px solid rgba(255, 255, 255, 0.7); */
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   position: fixed;
   width: 100%;
@@ -64,10 +58,6 @@ ul {
   opacity: 1;
   text-decoration-line: none;
   white-space: nowrap;
-}
-
-.menu #home {
-  font-style: italic;
 }
 
 .menu a {
@@ -198,13 +188,41 @@ ul {
 
 /* possiblement fer app-section i modificar */
 .home-section {
-  margin-top: 50px;
-  width: 100%;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-size: 15px;
   text-align: justify;
   color: white;
   overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.home-section * {
+  min-width: 50%;
+}
+
+.logo-container > * {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.logo-container > img {
+  border-top: 25vh solid white;
+  border-bottom: 25vh solid white;
+}
+
+.outline {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.cta-container {
+  color: black;
 }
 
 .home-video-container {
@@ -213,7 +231,7 @@ ul {
   width: 100%;
 
   left: 0;
-  object-fit: cover;
+  object-fit:scale-down;
   top: 0;
 }
 

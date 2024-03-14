@@ -13,13 +13,6 @@
   color: white;
 }
 
-.main {
-  /* background-image: url("background.png"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: auto;
-     */
-}
-
 html {
   scrollbar-width: 0px;
   scrollbar-color: transparent;
@@ -84,7 +77,7 @@ ul {
 
 .menu a:hover {
   color: #5f64a0;
-  moz-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -92,15 +85,9 @@ ul {
 
 /* -------------------------- APP ---------------------- */
 
-.pageWrapper {
-  position: "absolute";
-  width: "100%";
-  min-height: "100%";
-  background-color: #81b8c7;
-}
-
 .app-section {
-  margin-top: 110px;
+  background-color: #81b8c7;
+  padding-top: 110px;
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 70px;
@@ -145,7 +132,7 @@ ul {
 .btn.btn-smooth-transition:hover {
   background-color: #386671;
   color: white;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -243,7 +230,7 @@ ul {
   bottom: 10%;
   width: fit-content;
   transform: translateX(-92%);
-  moz-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -255,7 +242,7 @@ ul {
 
 .home-info-container:hover {
   transform: translateX(0);
-  moz-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;

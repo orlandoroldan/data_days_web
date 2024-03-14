@@ -6,7 +6,6 @@ const Presentacio = () => {
           Què són els Data Days?
         </h1>
         <p>
-
           Dels creadors de la Datathon FME, Data Days és una iniciativa innovadora organitzada per
           l&apos;Associació d&apos;Estudiants de Dades de la UPC (AED), destinada
           a reunir entusiastes de la Ciència i l&apos;Enginyeria de les Dades

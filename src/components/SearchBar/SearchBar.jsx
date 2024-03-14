@@ -1,16 +1,18 @@
-import React from "react"
+import PropTypes from 'prop-types';
+import './SearchBar.css';
 
-import './SearchBar.css'
-
-const SearchBar = ({onChange}) => {
+const SearchBar = ({ onChange }) => {
     return (
-        <input 
-            class="searchBar" 
-            type="text" 
+        <input
+            className="searchBar"
+            type="text"
             onChange={onChange}
             placeholder="Cerca avançada"
         />
     );
+};
+SearchBar.propTypes = {
+    onChange: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

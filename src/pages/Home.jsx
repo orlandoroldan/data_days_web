@@ -6,17 +6,14 @@
 
 const Home = () => {
   return (
-    <div className="home-section">
-      <div className='cta-container'>
-        <h1>BLA BLA BLA</h1>
-      </div>
+    <>
       <div className="logo-container">
         <video muted autoPlay="True" playsInline loop>
           <source src="/vid.mov" type="video/mp4" />
         </video>
         <img src='/logo.svg' alt="logo" />
-
       </div>
+      <h1>ghola</h1>
       <div className="home-info-container">
         <div className="row align-items-start">
           <div className="home-text">
@@ -33,7 +30,7 @@ const Home = () => {
       <div style={{ position: "fixed", zIndex: "1", backgroundColor: "rgba(255,255,255,0.8)", color: "black", width: "100%", textAlign: "center", paddingTop: "5px", paddingBottom: "5px", bottom: "0", fontSize: "11px" }}>
         Sohl-Dickstein, J. (2024). The boundary of neural network trainability is fractal. arXiv preprint arXiv:2402.06184.
       </div>
-    </div >
+    </>
   );
 };
 

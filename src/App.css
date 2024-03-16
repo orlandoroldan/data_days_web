@@ -41,7 +41,8 @@ ul {
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -186,23 +187,9 @@ ul {
 
 /* --------------------- HOME -------------------------- */
 
-/* possiblement fer app-section i modificar */
-.home-section {
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  color: white;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.home-section * {
-  min-width: 50%;
-}
-
 .logo-container > * {
-  width: 50%;
+  width: 100%;
+  padding: 25vh 25vw;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -214,33 +201,6 @@ ul {
   border-bottom: 25vh solid white;
 }
 
-.outline {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.cta-container {
-  color: black;
-}
-
-.home-video-container {
-  display: block;
-  height: 100%;
-  width: 100%;
-
-  left: 0;
-  object-fit:scale-down;
-  top: 0;
-}
-
-.home-video-container > video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-}
 
 .home-info-container {
   position: fixed;

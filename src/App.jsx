@@ -1,9 +1,25 @@
-export default function App() {
+import { Routes, Route } from "react-router-dom";
+
+import Agenda from "./pages/Agenda";
+import QuiSom from "./pages/QuiSom";
+import Home from "./pages/Home";
+import FAQ from "./pages/FAQ";
+import Layout from "./pages/Layout";
+
+import "./App.css";
+
+function App() {
   return (
-    <div className="bg-gray-100 margin-0 p-4">
-      <h1 className="text-3xl font-bold">
-        Hello world!
-      </h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="faq" element={<FAQ />} />
+        <Route path="quisom" element={<QuiSom />} />
+        <Route path="agenda" element={<Agenda />} />
+        <Route path="*" element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
+
+export default App;

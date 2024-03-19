@@ -1,0 +1,54 @@
+.menu {
+  overflow: hidden;
+  display: block;
+}
+
+.menu ul {
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.menu li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  display: inline;
+  margin-left: 3%;
+  margin-right: 3%;
+  opacity: 1;
+  text-decoration-line: none;
+  white-space: nowrap;
+}
+
+.menu li:last-child {
+  font-weight: 500;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: #5f64a0;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+footer {
+  padding: 50px 10% 80px !important;
+}
+
+footer b {
+  font-family: "Work Sans", sans-serif;
+}

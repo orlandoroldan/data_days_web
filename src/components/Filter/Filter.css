@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  background-color: white;
+  align-items: center;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.title {
+  text-align: center;
+  color: rgb(65, 65, 65);
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 14px;
+    color: #523871;
+  }
+}

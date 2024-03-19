@@ -1,0 +1,284 @@
+/* -------------------------- APP ---------------------- */
+
+.app-section {
+  background-color: #81b8c7;
+  padding-top: 110px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 70px;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+
+  text-align: justify;
+  color: black;
+
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#qui-som-equip {
+  padding-top: 50px;
+}
+
+.titol-quisom,
+.titol-agenda,
+.titol-presentacio {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #c3e1e9;
+  text-align: center;
+  font-weight: 550;
+  font-size: 27px;
+}
+
+.btn.btn-orange {
+  color: black;
+  align-items: center;
+  border-style: solid;
+  border-color: #386671;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-width: 2px;
+}
+
+.btn.btn-smooth-transition:hover {
+  background-color: #386671;
+  color: white;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* .team-member {
+    text-align: center;
+    margin: 20px;
+    width: 150px;
+    height: 250px;
+    display: inline;
+  }
+  
+.team-member-image {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    display: block;
+}
+ */
+
+/* -------------------- QUI SOM? --------------------------- */
+
+.team-member {
+  justify-content: center;
+  width: 100%;
+  display: block;
+  gap: 16px;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.team-member-image {
+  width: 140px;
+  /* Adjust image width as needed */
+  height: 140px;
+  /* Adjust image height as needed */
+  border-radius: 50%;
+  /* Make the image circular */
+  object-fit: cover;
+  /* Ensure the image fills the circular frame */
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-content {
+  text-align: center;
+  /* Center content within the profile */
+  margin-top: 15px;
+}
+
+/* ------------------  AGENDA ---------------------- */
+
+.quest {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+
+/* --------------------- HOME -------------------------- */
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+h1 {
+  font-size: max(9vw, 50px) !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-size: max(3vw, 25px) !important;
+  font-weight: 700 !important;
+}
+
+p {
+  font-size: max(1.5vw, 19px) !important;
+  font-weight: 400 !important;
+  line-height: 1.5em !important;
+  text-align: justify !important;
+}
+
+b {
+  font-weight: 600 !important;
+}
+
+.small-text {
+  font-size: 12px !important;
+}
+
+.content {
+  padding-top: 110vh;
+  color: black;
+  padding: 110vh 10% 70px 10%;
+}
+
+.content br {
+  padding-bottom: 10px !important;
+  user-select: none;
+}
+
+.logo-container>* {
+  position: absolute;
+  width: 100%;
+  padding: 0 25vw;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  pointer-events: none;
+}
+
+.logo-container>img {
+  border-top: 25vh solid white;
+  border-bottom: 25vh solid white;
+}
+
+.home-info-container {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: fit-content;
+  transform: translateX(-78%);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline;
+}
+
+.home-info-container:hover {
+  transform: translateX(0);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-text {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  padding-left: 20px;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  display: flex;
+  background-color: #cb3f4b;
+  width: fit-content;
+}
+
+.hidden-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobresurt {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  writing-mode: tb-rl;
+  text-orientation: sideways-right;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.sobresurt>p {
+  margin: 0;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+}
+
+/* ----------------PRESENTACIÓ ----------------------------- */
+
+.FAQsection h3 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 1.75rem;
+}
+
+.FAQquestion {
+  font-size: 0.95rem;
+  padding-top: 11px;
+  font-weight: 600;
+}
+
+.FAQanswer {
+  font-size: 0.9rem;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.accordion {
+  --bs-accordion-btn-icon-transform: rotate(180deg);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' className='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' className='bi bi-arrow-up' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z'/%3E%3C/svg%3E");
+}
+
+.collappse-visibility {
+  visibility: visible !important;
+}
+
+/* -------------- MEDIA MAX-WIDTH: 768px ------------------- */
+
+@media (max-width: 768px) {
+  .card.profile.workshop {
+    width: 100% !important;
+  }
+
+  .logo-container * {
+    padding: 0 10vw;
+  }
+
+  .home-info-container {
+    bottom: 5%;
+  }
+}

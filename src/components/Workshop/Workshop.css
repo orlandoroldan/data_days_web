@@ -1,0 +1,42 @@
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.circle-Beginner {
+  background-color: green;
+}
+
+.circle-Intermediate {
+  background-color: yellow;
+}
+
+.circle-Advanced {
+  background-color: red;
+}
+
+.card.profile.workshop{
+  width: 50%;
+  background-color:inherit;
+  border:none;
+  display: inline-block;
+  padding:4%;
+}
+
+.workshop-title {
+  color:white;
+  height: "20%"; 
+  /* background-color: #b9715f; */
+  /* background-color:#895244; */
+  background-color: #386671;
+
+}
+
+.workshop-content {
+  background-color: white;
+}
+
+
+

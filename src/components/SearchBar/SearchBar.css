@@ -1,23 +1,21 @@
-
-
 /* a editar */
 .searchBar {
     align-items: center;
     width: 45.72%;
-    margin-left:12px;
+    margin-left: 12px;
     padding: 10px;
     border: none;
     border-radius: 8px;
-    color:black;
-    margin-top:15px;
-    margin-bottom:30px;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 30px;
 
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
 
-    .searchBar{
+    .searchBar {
         width: 100%;
-        margin-left:0;
+        margin-left: 0;
     }
 }

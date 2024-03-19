@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <div className="logo-container">
         <video muted autoPlay="True" playsInline loop>
-          <source src="/vid.mov" type="video/mp4" />
+          <source src="/vid.mp4" type="video/mp4" />
         </video>
         <img src='/logo.svg' alt="logo" />
       </div>

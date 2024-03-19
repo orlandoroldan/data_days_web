@@ -1,9 +1,9 @@
-const Presentacio = () => {
+const FAQ = () => {
   return (
     <div className="app-section">
       <div id="FAQsection">
         <h1 className="titol-presentacio">
-          Preguntes més freqüents (FAQs)
+          Preguntes freqüents
         </h1>
         <div className="FAQsection">
           <h3>SOBRE L&apos;ESDEVENIMENT</h3>
@@ -68,4 +68,4 @@ const Presentacio = () => {
   );
 };
 
-export default Presentacio;
+export default FAQ;

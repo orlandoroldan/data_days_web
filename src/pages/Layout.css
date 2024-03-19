@@ -48,3 +48,7 @@
 footer {
   padding: 50px 10% 80px !important;
 }
+
+footer b {
+  font-family: "Work Sans", sans-serif;
+}

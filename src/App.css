@@ -217,7 +217,7 @@ b {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  user-select: none;
+  pointer-events: none;
 }
 
 .logo-container>img {

@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import "./Layout.css";
 
 const Layout = () => {
   return (
@@ -12,6 +13,10 @@ const Layout = () => {
         </ul>
       </nav>
       <Outlet />
+      <footer>
+        <p><b>© 2024 Associació d&apos;Estudiants de Dades</b></p>
+        <p className='small-text'>Logo: Sohl-Dickstein, J. (2024). The boundary of neural network trainability is fractal. arXiv preprint arXiv:2402.06184.</p>
+      </footer>
     </>
   );
 };

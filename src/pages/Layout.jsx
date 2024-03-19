@@ -8,7 +8,7 @@ const Layout = () => {
           <li><Link to="/">Inici</Link></li>
           <li><Link to="/agenda">Agenda</Link></li>
           <li><Link to="/presentacio">FAQs</Link></li>
-          <li><Link to="/quisom">Qui som?</Link></li>
+          <li><a href='https://form.typeform.com/to/jvZTlP41' target='_blank' rel='noreferrer'>Apunta&apos;t</a></li>
         </ul>
       </nav>
       <Outlet />

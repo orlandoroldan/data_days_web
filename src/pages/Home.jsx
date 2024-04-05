@@ -1,9 +1,3 @@
-
-// "Home" conté 
-
-// 1. Secció de vídeo del títol
-// 2. Data, lloc
-
 const Home = () => {
   return (
     <>

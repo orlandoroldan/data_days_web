@@ -14,25 +14,18 @@ const Modal = ({ hasCloseBtn, isOpen, onClose, children }) => {
     useEffect(() => {
         const modalElement = modalRef.current;
         if (modalElement) {
-            if (isModalOpen) {
-                modalElement.showModal();
-            } else {
-                modalElement.close();
-            }
+            if (isModalOpen) modalElement.showModal();
+            else modalElement.close();
         }
     }, [isModalOpen]);
 
     const handleCloseModal = () => {
-        if (onClose) {
-            onClose();
-        }
+        if (onClose) onClose();
         setModalOpen(false);
     };
 
     const handleKeyDown = (event) => {
-        if (event.key === "Escape") {
-            handleCloseModal();
-        }
+        if (event.key === "Escape") handleCloseModal();
     };
 
     return (

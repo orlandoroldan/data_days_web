@@ -8,7 +8,8 @@ const level_to_color = (level) => {
     return "#d3c3e9";
 };
 
-const Workshop = ({ title, level, kind, small_description, description, date, time, place }) => {
+const Workshop = ({ item }) => {
+    const { title, level, kind, small_description, description, date, time, place, autor } = item;
     const [isOpen, setModalOpen] = useState(false);
     const closeModal = () => setModalOpen(false);
 
@@ -32,31 +33,26 @@ const Workshop = ({ title, level, kind, small_description, description, date, ti
                             onClose={closeModal}>
                             <Modal.Title>{title}</Modal.Title>
                             <Modal.Body>
-                                {description}
-                                <p></p>
-                                <p>Temàtica: {kind}</p>
-                                <p>Data: {date}</p>
-                                <p>Hora: {time}</p>
-                                <p>Lloc: {place}</p>
-                                <p>Nivell: {level} </p>
+                                <p>{description}</p>
+                                <br />
+                                <div className='modal-details'>
+                                    {autor && <p>Autor: {autor}</p>}
+                                    <p>Data: {date}</p>
+                                    <p>Hora: {time}</p>
+                                    <p>Lloc: {place}</p>
+                                    <p>Nivell: {level} </p>
+                                    <p>Temàtica: {kind}</p>
+                                </div>
                             </Modal.Body>
                         </Modal>
                     </div>
-
                 </div>
             </div>
         </>
     );
 };
 Workshop.propTypes = {
-    title: PropTypes.string.isRequired,
-    level: PropTypes.string.isRequired,
-    kind: PropTypes.string.isRequired,
-    small_description: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    place: PropTypes.string.isRequired,
+    item: PropTypes.object.isRequired,
 };
 
 

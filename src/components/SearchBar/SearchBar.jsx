@@ -7,7 +7,7 @@ const SearchBar = ({ onChange }) => {
             className="searchBar"
             type="text"
             onChange={onChange}
-            placeholder="Cerca avançada"
+            placeholder="Cerca"
         />
     );
 };

@@ -22,7 +22,7 @@ const Filter = ({ level, isActive, onClick }) => {
         onClick={onClick}
         style={{ backgroundColor: `${isActive ? "#386671" : color_by_level({ level })}` }}
       >
-        <h3 className="title" style={{ color: `${isActive ? color_by_level({ level }) : "black"}` }}>{capitalize(level)}</h3>
+        <h3 className="title text-nowrap" style={{ color: `${isActive ? color_by_level({ level }) : "black"}` }}>{capitalize(level)}</h3>
       </div>
     </div>
 

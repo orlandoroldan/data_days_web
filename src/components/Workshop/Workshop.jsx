@@ -4,9 +4,7 @@ import Modal from '../Modal/Modal';
 import "./Workshop.css";
 
 const level_to_color = (level) => {
-    if (level === "Beginner") {
-        return "#dcd4b1";
-    }
+    if (level === "Beginner") return "#dcd4b1";
     return "#d3c3e9";
 };
 
@@ -18,21 +16,16 @@ const Workshop = ({ title, level, kind, small_description, description, date, ti
         <>
             <div className="card profile workshop">
                 <div className="card-body profile-title p-0">
-                    <div className="workshop-title p-3 rounded-top" style={{ "textAlign": "center" }}>
-                        <h6>{title}</h6>
+                    <div className="workshop-title p-3 rounded-top">
+                        <h3>{title}</h3>
                     </div>
                     <div className="workshop-content p-3 rounded-bottom" style={{ backgroundColor: level_to_color(`${level}`) }}>
-                        <div style={{ height: "80px", textAlign: "justify", textJustify: "inter-word", fontSize: "13px" }}>
-                            <p>{small_description}</p>
+                        <p className='description'>{small_description}</p>
+                        <div className='details'>
+                            <span className='level'>Nivell: {level}</span>
+                            <span className='date'>Data: {date}</span>
                         </div>
-                        <div style={{ fontSize: "13px", paddingBottom: "10px", paddingTop: "7px" }}>
-                            <span>Nivell: {level}</span><span style={{ float: "right" }}>Data: {date}</span>
-                        </div>
-                        <a href="#" className="btn btn-smooth-transition btn-orange" onClick={() => setModalOpen(true)} style={{ marginLeft: "auto", marginRight: "auto", display: "block", width: "40%", fontSize: "14px" }}>Saber-ne més</a>
-                        {/* <dialog id="modal" className="modal">
-                            <button id="closeModal" className="modal-close-btn">Close</button>
-                            <p>hello</p>
-                        </dialog> */}
+                        <a className="btn btn-smooth-transition btn-orange" onClick={() => setModalOpen(true)}>Saber-ne més</a>
                         <Modal
                             hasCloseBtn={true}
                             isOpen={isOpen}

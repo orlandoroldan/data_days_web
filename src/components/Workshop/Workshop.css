@@ -1,9 +1,9 @@
-.circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline-block;
-  }
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 .circle-Beginner {
   background-color: green;
@@ -17,26 +17,66 @@
   background-color: red;
 }
 
-.card.profile.workshop{
+.card.profile.workshop {
   width: 50%;
-  background-color:inherit;
-  border:none;
+  background-color: inherit;
+  border: none;
   display: inline-block;
-  padding:4%;
+  padding: 4%;
 }
 
 .workshop-title {
-  color:white;
-  height: "20%"; 
-  /* background-color: #b9715f; */
-  /* background-color:#895244; */
+  color: white;
+  height: 20%;
+  text-align: center;
   background-color: #386671;
+  font-size: 1.4rem;
+}
 
+.workshop-title h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .workshop-content {
   background-color: white;
 }
 
+.description {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 1.1rem !important;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.level {
+  text-align: left !important;
+}
+
+.date {
+  text-align: right !important;
+}
+
+.filter {
+  padding: 0 !important;
+}
+
+.filter * {
+  font-size: 1.1rem;
+}
 
 
+.filter h6 {
+  padding-bottom: 10px;
+}

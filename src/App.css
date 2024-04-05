@@ -154,14 +154,19 @@ b {
 }
 
 .content {
-  padding-top: 110vh;
   color: black;
-  padding: 110vh 10% 70px 10%;
+  padding: 5vh 10% 70px 10%;
 }
 
 .content br {
   padding-bottom: 10px !important;
   user-select: none;
+}
+
+.logo-container {
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden !important;
 }
 
 .logo-container>* {

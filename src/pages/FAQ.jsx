@@ -4,9 +4,9 @@ const FAQ = () => {
   return (
     <div className="app-section">
       <div id="FAQsection">
-        <h1 className="titol-presentacio">
+        <h2 className="titol-presentacio">
           Preguntes freqüents
-        </h1>
+        </h2>
         <div className="FAQsection">
           <h3>SOBRE L&apos;ESDEVENIMENT</h3>
           <div className="FAQquestion">
@@ -64,7 +64,7 @@ const FAQ = () => {
           <div className="FAQquestion">
             Fins a quin dia tinc per apuntar-me?
           </div>
-          <div>
+          <div className='FAQanswer'>
             Les inscripcions romandran obertes fins que s&apos;assoleixi la capacitat esperada.
           </div>
           <div className="FAQquestion">

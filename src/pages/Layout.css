@@ -49,6 +49,22 @@ footer {
   padding: 50px 10% 80px !important;
 }
 
+footer * {
+  color: black !important;
+  text-decoration: none !important;
+}
+
 footer b {
   font-family: "Work Sans", sans-serif;
+  font-size: 1em !important;
+}
+
+footer a {
+  font-size: 1.2em !important;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 50px 5% 80px !important;
+  }
 }

@@ -2,8 +2,8 @@
 
 .app-section {
   padding-top: 110px;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 70px;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -25,6 +25,7 @@
   color: #3a3b3c;
   text-align: center;
   font-weight: 500 !important;
+  text-transform: uppercase;
   font-size: 4rem !important;
 }
 
@@ -256,27 +257,28 @@ b {
 /* ---------------- FAQs ----------------------------- */
 
 .FAQsection h3 {
-  font-size: 1.3rem;
-  font-weight: 300;
+  font-size: 1.9rem;
   margin-top: 1.75rem;
 }
 
 .FAQquestion {
-  font-size: 0.95rem;
   padding-top: 11px;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .FAQanswer {
-  font-size: 0.9rem;
   padding-top: 7px;
   padding-bottom: 10px;
   font-weight: 400;
   line-height: 1.5em;
+  font-size: 1.2rem;
 }
+
 
 .FAQanswer a {
   color: black;
+  font-size: inherit !important;
 }
 
 strong {
@@ -317,6 +319,25 @@ strong {
 }
 
 @media (max-width: 768px) {
+
+  .titol-agenda,
+  .titol-presentacio {
+    font-size: 2.5rem !important;
+  }
+
+  .FAQsection h3 {
+    font-size: 1.5rem;
+  }
+
+  .FAQquestion,
+  .FAQanswer {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 5vh 5% 70px 5%;
+  }
+
   .app-section {
     padding-left: 5%;
     padding-right: 5%;

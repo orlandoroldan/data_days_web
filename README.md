@@ -1,8 +1,9 @@
-# React + Vite
+# Data Days Barcelona
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Lloc web oficial
 
-Currently, two official plugins are available:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4c4a6a34-b204-4c28-834f-0e465521d73b/deploy-status)](https://app.netlify.com/sites/datadays/deploys)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aquest és el repositori del lloc web oficial de Data Days Barcelona. Aquest lloc web està construït amb [Vite](https://vitejs.dev/), un entorn de desenvolupament ràpid per a aplicacions web modernes.
+
+Consulta el lloc web en directe a [https://datadays.aed.cat/](https://datadays.aed.cat/).

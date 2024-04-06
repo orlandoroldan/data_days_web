@@ -117,7 +117,8 @@ h2 {
   font-weight: 700 !important;
 }
 
-p {
+p,
+a {
   font-size: max(1.5vw, 19px) !important;
   font-weight: 400 !important;
   line-height: 1.5em !important;
@@ -138,6 +139,10 @@ b {
 
 .content p {
   text-align: justify;
+}
+
+.content a {
+  color: black;
 }
 
 .content br {
@@ -223,6 +228,31 @@ b {
   font-weight: 600;
 }
 
+.fullwidth {
+  display: flex;
+  justify-content: center;
+}
+
+.callout-with-image {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 40px;
+  border-radius: 10px;
+  margin-top: 100px;
+  width: 80vw;
+}
+
+.callout-with-image img {
+  max-width: 100%;
+}
+
+.callout-with-image h3 {
+  font-size: 2.8em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
 /* ---------------- FAQs ----------------------------- */
 
 .FAQsection h3 {
@@ -253,7 +283,38 @@ strong {
   font-weight: 600 !important;
 }
 
-/* -------------- MEDIA MAX-WIDTH: 768px ------------------- */
+/* -------------- MEDIA MAX-WIDTH ------------------- */
+
+@media (max-width: 1000px) {
+
+  .callout-with-image {
+    width: 100vw;
+  }
+
+  .callout-with-image h3 {
+    font-size: 2em !important;
+  }
+
+  .callout-with-image * {
+    line-height: 25px;
+  }
+
+  .callout-with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .callout-with-image:first-child {
+    text-align: center;
+  }
+
+  .callout-with-image img {
+    max-width: 40vw;
+  }
+
+  .fullwidth {
+    padding: 40px 20px 40px 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .app-section {

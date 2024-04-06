@@ -30,7 +30,6 @@ const QuiSom = () => {
       </div>
       <div id="qui-som-equip">
         <h1 className='titol-quisom'>QUI SOM? - L&apos;equip</h1>
-        {/* <p style={{textAlign:"center", fontStyle:"italic"}}>Potser un petit text?</p> */}
         <div className="container">
           <div className="row">
             <Profile

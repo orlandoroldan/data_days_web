@@ -1,7 +1,6 @@
 /* -------------------------- APP ---------------------- */
 
 .app-section {
-  background-color: #81b8c7;
   padding-top: 110px;
   padding-left: 15%;
   padding-right: 15%;
@@ -22,12 +21,11 @@
 .titol-quisom,
 .titol-agenda,
 .titol-presentacio {
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: #c3e1e9;
+  margin-bottom: 40px;
+  color: #3a3b3c;
   text-align: center;
-  font-weight: 550;
-  font-size: 27px;
+  font-weight: 500 !important;
+  font-size: 4rem !important;
 }
 
 .btn.btn-orange {

@@ -2,7 +2,7 @@
     align-items: center;
     width: 48.9%;
     padding: 10px;
-    border: none;
+    border: 2px solid #3a3b3c;
     border-radius: 8px;
     color: black;
     margin-top: 15px;
@@ -11,7 +11,6 @@
 }
 
 @media (max-width: 900px) {
-
     .searchBar {
         width: 100%;
         margin-left: 0;

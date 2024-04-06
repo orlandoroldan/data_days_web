@@ -2,13 +2,14 @@
     background-color: #ffffff;
     color: black;
     width: 75%;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .modal-title {
     padding: 20px;
     padding-left: 5%;
     padding-right: 20%;
+    border-radius: 5px;
     color: black;
     background-color: rgb(203, 184, 159);
     font-weight: 500;

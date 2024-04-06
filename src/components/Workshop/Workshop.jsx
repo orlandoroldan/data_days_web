@@ -9,7 +9,7 @@ const level_to_color = (level) => {
 };
 
 const Workshop = ({ item }) => {
-  const { title, level, kind, small_description, description, date, time, place, autor } = item;
+  const { title, level, kind, small_description, description, date, time, place, author } = item;
   const [isOpen, setModalOpen] = useState(false);
   const closeModal = () => setModalOpen(false);
 
@@ -36,7 +36,7 @@ const Workshop = ({ item }) => {
                 <p>{description}</p>
                 <br />
                 <div className='modal-details'>
-                  {autor && <p>Autor: {autor}</p>}
+                  {author && <p>Ponent: {author}</p>}
                   <p>Data: {date}</p>
                   <p>Hora: {time}</p>
                   <p>Lloc: {place}</p>

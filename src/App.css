@@ -30,6 +30,7 @@
 }
 
 .btn.btn-orange {
+  font-size: 1rem !important;
   color: black;
   align-items: center;
   border-style: solid;

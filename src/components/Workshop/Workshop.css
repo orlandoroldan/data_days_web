@@ -29,7 +29,8 @@
   color: white;
   height: 20%;
   text-align: center;
-  background-color: #386671;
+  /* background-color: #386671; */
+  background-color: #4795a5;
   font-size: 1.4rem;
 }
 
@@ -38,6 +39,8 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size:1em;
+  padding-bottom:2px;
 }
 
 .workshop-content {

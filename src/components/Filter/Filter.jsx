@@ -4,14 +4,26 @@ import "./Filter.css";
 const capitalize = (str) =>
   str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 
-const color_by_level = (level) => {
-  if (level.level === "Beginner") {
-    return "#dcd4b1";
+const color_by_level = (state,level) => {
+
+  if (state === "unclicked"){
+    if (level.level === "Beginner") {
+      return "#fae7cf";
+    }
+    else if (level.level === "Advanced") {
+      return "#f9d7cf";
+    }
+    return "#e5dac7";
   }
-  else if (level.level === "Advanced") {
-    return "#d3c3e9";
+  if (state === "clicked"){
+    if (level.level === "Beginner") {
+        return "#d19156";
+    }
+    else if (level.level === "Advanced"){
+        return "#a55747"
+    }
+    return "#7d6761";
   }
-  return "#c3e1e9";
 };
 
 const Filter = ({ level, isActive, onClick }) => {
@@ -20,9 +32,9 @@ const Filter = ({ level, isActive, onClick }) => {
       <div
         className="wrapper"
         onClick={onClick}
-        style={{ backgroundColor: `${isActive ? "#386671" : color_by_level({ level })}` }}
+        style={{ backgroundColor: `${isActive ? color_by_level("clicked", { level }) : color_by_level("unclicked",{ level })}` }}
       >
-        <h3 className="title text-nowrap" style={{ color: `${isActive ? color_by_level({ level }) : "black"}` }}>{capitalize(level)}</h3>
+        <h3 className="title text-nowrap" style={{ color: `${isActive ? color_by_level("unclicked", { level }) : "black"}` }}>{capitalize(level)}</h3>
       </div>
     </div>
 

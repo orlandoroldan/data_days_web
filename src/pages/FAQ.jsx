@@ -9,6 +9,8 @@ const FAQ = () => {
         </h2>
         <div className="FAQsection">
           <h3>SOBRE L&apos;ESDEVENIMENT</h3>
+          <div className='separator'>s</div>
+
           <div className="FAQquestion">
             A quina hora comença i acaba l&apos;esdeveniment?
           </div>
@@ -55,6 +57,8 @@ const FAQ = () => {
         </div>
         <div className="FAQsection">
           <h3>PARTICIPANTS</h3>
+          <div className='separator'>a</div>
+
           <div className="FAQquestion">
             Puc assistir només a una xerrada?
           </div>
@@ -103,8 +107,11 @@ const FAQ = () => {
           <div className='FAQanswer'>Si tens encara més dubtes, pots contactar amb nosaltres a <a href="mailto:hola@aed.cat">hola@aed.cat</a>!</div>
         </div>
 
+
         <div className="FAQsection">
           <h3>VOLUNTARIS</h3>
+          <div className='separator'>a</div>
+
           <div className="FAQquestion">
             Com puc apuntar-me com a persona voluntària?
           </div>
@@ -121,6 +128,8 @@ const FAQ = () => {
 
         <div className="FAQsection">
           <h3>EMPRESES</h3>
+          <div className='separator'>a</div>
+
           <div className="FAQquestion">
             M&apos;agradaria patrocinar l&apos;esdeveniment. Com ho puc fer?
           </div>

@@ -10,8 +10,9 @@
     padding-left: 5%;
     padding-right: 20%;
     border-radius: 5px;
-    color: black;
-    background-color: rgb(203, 184, 159);
+    color: white;
+    /* background-color: rgb(203, 184, 159); */
+    background-color: #7d6761;
     font-weight: 500;
     font-size: 1.6rem;
     text-align: left;

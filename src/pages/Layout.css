@@ -68,3 +68,9 @@ footer a {
     padding: 50px 5% 80px !important;
   }
 }
+
+@media (max-width: 550px) {
+  .bar-logo {
+    display: none;
+  }
+}

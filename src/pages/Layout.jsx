@@ -6,6 +6,7 @@ const Layout = () => {
     <>
       <nav className='menu'>
         <ul>
+          <img src='/logo-no-background.png' class="bar-logo" alt="logo" height="60px" style={{position: "fixed", top: "5px", left: "3%"}} />
           <li><Link to="/">Inici</Link></li>
           <li><Link to="/agenda">Agenda</Link></li>
           <li><Link to="/faq">FAQs</Link></li>

@@ -39,9 +39,15 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size:1em;
+  font-size:0.75em;
   padding-bottom:2px;
 }
+
+@media (max-width: 768px) {
+  .workshop-title h3 {
+    -webkit-line-clamp: 3;
+  }
+} 
 
 .workshop-content {
   background-color: white;
@@ -53,7 +59,7 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 1.1rem !important;
+  font-size: 0.9rem !important;
 }
 
 .details {

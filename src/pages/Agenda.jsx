@@ -19,7 +19,7 @@ const Agenda = () => {
       <div style={{ paddingBottom: "20px" }}>
         <h2 className='titol-agenda' style={{color:"#DE7763"}}>Agenda</h2>
         <p>Al llarg de l&apos;11 i 12 de maig tindran lloc els Data Days. Oferirem un munt de xerrades, tallers i activitats. Aquí pots consultar l&apos;agenda de l&apos;esdeveniment.</p>
-        <p><strong>En els propers dies apareixeran més actes! Estigues atent!</strong></p>
+        <p><strong>Els propers dies aniran apareixent més actes! Estigues atent!</strong></p>
       </div>
       <div className='agenda'>
         <div className="container">

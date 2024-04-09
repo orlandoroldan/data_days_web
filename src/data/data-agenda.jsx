@@ -11,7 +11,7 @@ export const data_agenda = [
         place: "TBC",
     },
     {
-        title: "Más allá de la pantalla: Efectos especiales e IA",
+        title: "Más allá de la pantalla: Efectos especiales y ML",
         author: "José Pérez Cano",
         level: "Advanced",
         kind: "Conferència",

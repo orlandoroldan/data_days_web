@@ -9,7 +9,7 @@ import { data_agenda } from '../data/data-agenda.jsx';
 const Agenda = () => {
   const [inputValue, setInputValue] = useState("");
   const [activeFilter, setActiveFilter] = useState("");
-  const levels = ["Beginner", "Advanced"];
+  const levels = ["OpenToAll", "Advanced"];
 
   const [activeFilter2, setActiveFilter2] = useState("");
   const days = ["11 de maig", "12 de maig"];

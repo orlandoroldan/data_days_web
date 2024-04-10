@@ -5,11 +5,11 @@ import "./Workshop.css";
 
 const level_to_color = (where, level) => {
   if (where == "text"){
-    if (level === "Beginner") return "#fae7cf";// return "#c7e5da"; // return "#c6e7d3";
+    if (level === "OpenToAll") return "#fae7cf";// return "#c7e5da"; // return "#c6e7d3";
     return "#f9d7cf";//"#dac7e5"; // return "#dac7e5";
   }
   if (where == "title"){
-    if (level ==="Beginner") return "#d19156";
+    if (level ==="OpenToAll") return "#d19156";
     return "#a55747";
   }
 };
@@ -47,7 +47,7 @@ const Workshop = ({ item }) => {
                   <p>Hora: {time}</p>
                   <p>Lloc: {place}</p>
                   <p>Nivell: {level} </p>
-                  <p>Temàtica: {kind}</p>
+                  <p>Tipus: {kind}</p>
                 </div>
               </Modal.Body>
             </Modal>

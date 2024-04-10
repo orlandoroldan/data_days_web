@@ -95,7 +95,7 @@ const FAQ = () => {
             No tinc gaire coneixement sobre el món de les dades. Em recomaneu venir?
           </div>
           <div className='FAQanswer'>
-            És clar que sí! Els Data Days estan oberts a tothom. Farem xerrades i tallers de diversos nivells. Si no tens gaire coneixença sobre el món de les dades, pots optar per assistir als esdeveniments per a principiants o, fins i tot, a algun de més avançat.
+            És clar que sí! Els Data Days estan oberts a tothom. Farem xerrades i tallers de diversos nivells. Si no tens gaire coneixença sobre el món de les dades, pots optar per assistir als esdeveniments oberts a tothom (OpenToAll) o, fins i tot, a algun de més avançat (Advanced).
           </div>
           <div className='FAQquestion'>Tinc més dubtes, com els resolc?</div>
           <div className='FAQanswer'>Si tens encara més dubtes, pots contactar amb nosaltres a <a href="mailto:hola@aed.cat">hola@aed.cat</a>!</div>

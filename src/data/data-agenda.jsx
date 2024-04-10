@@ -2,9 +2,9 @@ export const data_agenda = [
     {
         title:"Què és el Big Data en Genòmica Mèdica?",
         author: "Arcadi Navarro",
-        level: "Advanced",
+        level: "OpenToAll",
         kind: "Conferència",
-        small_description: "Què és el Big Data en Genòmica Mèdica i què en podem fer? L'Arcadi Navarro, doctor en Biologia per la Universitat Autònoma de Barcelona, profesor d'invsetigació en ICREA i director de la Fundació Pasqual Maragall, ens donarà la resposta.",
+        small_description: "Arcadi Navarro, doctor en Biologia per la Universitat Autònoma de Barcelona, profesor d'investigació a ICREA i director de la Fundació Pasqual Maragall, ens donarà la resposta.",
 
         description: "Què és el Big Data en Genòmica Mèdica i què en podem fer? L'Arcadi Navarro, doctor en Biologia per la Universitat Autònoma de Barcelona, profesor d'invsetigació en ICREA i director de la Fundació Pasqual Maragall, ens donarà la resposta.",
         date: "11 de maig",
@@ -15,7 +15,7 @@ export const data_agenda = [
     {
         title: "Speed Dating amb sponsors",
         author: "Data Days",
-        level: "Beginner",
+        level: "OpenToAll",
         kind: "Activity",
         small_description: "Attendees will be matched with sponsors, and brief interactions of 5 minutes will take place!",
         description: "Attendees will be paired with sponsors via an interests quiz. Brief interactions lasting 5 minutes will be facilitated. Additionally, there will be a sticker game: participants earn stickers by engaging with their matches, which can be redeemed for entry into a draw happening the following day (Sunday).",
@@ -38,7 +38,7 @@ export const data_agenda = [
     {
         title: "Taking web development to the NextJS level",
         author: "Pau Fernández",
-        level: "Beginner",
+        level: "OpenToAll",
         kind: "Taller",
         small_description: "Inicia't al món del desenvolupament web modern i fes el teu primer lloc web!",
         description: "Una introducció al desenvolupament web modern, on aprendràs els conceptes bàsics de HTML, CSS i JavaScript. També parlarem de frameworks, en concret NextJS! Aquest taller està pensat per a aquells que vulguin començar a programar i no sàpiguen per on començar. No cal cap coneixement previ!",
@@ -50,7 +50,7 @@ export const data_agenda = [
     {
         title:"The Information Age: Estudis de futur",
         author: "Jordi Cortadella i Ferran Marqués",
-        level: "Beginner",
+        level: "OpenToAll",
         kind: "Conferència",
         small_description: "Jornada de portes obertes on s’exposen estudis vinculats amb la ciència i enginyeria de dades.",
 

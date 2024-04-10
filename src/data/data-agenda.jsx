@@ -8,7 +8,8 @@ export const data_agenda = [
 
         description: "Què és el Big Data en Genòmica Mèdica i què en podem fer? L'Arcadi Navarro, doctor en Biologia per la Universitat Autònoma de Barcelona, profesor d'invsetigació en ICREA i director de la Fundació Pasqual Maragall, ens donarà la resposta.",
         date: "11 de maig",
-        place: "10:00h",
+        time: "10:00h",
+        place: "TBC",
         lang: "CA"
     },
     {

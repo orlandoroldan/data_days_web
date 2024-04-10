@@ -16,7 +16,7 @@ export const data_agenda = [
         level: "Advanced",
         kind: "Conferència",
         small_description: "Descubre qué hay detrás de los efectos especiales de tus películas y series favoritas. ",
-        description: "Descubre qué hay más allá de la pantalla, detrás de los efectos especiales de tus películas y series favoritas. José Pérez Cano, con experiencia en El Ranchito, nos hablará de la inteligencia artificial aplicada al mundo del cine y los modelos de inteligencia artificial que se emplean en el proceso de desarrollo de efectos especiales para las películas. Con muestras de contenido audiovisual para ilustrar su uso junto con las dificultades que comporta, nos hablará de una herramienta que desarrolló para hacer máscaras, los automatte, el uso de vidmatte y de los deepfake. ",
+        description: "Descubre qué hay más allá de la pantalla, detrás de los efectos especiales de tus películas y series favoritas. José Pérez Cano, con experiencia en El Ranchito, nos hablará de la inteligencia artificial aplicada al mundo del cine y los modelos de inteligencia artificial que se emplean en el proceso de desarrollo de efectos especiales para las películas. Con muestras de contenido audiovisual para ilustrar su uso junto con las dificultades que comporta, nos hablará de una herramienta que desarrolló para hacer máscaras: los automatte, el uso de vidmatte y de los deepfake. ",
         date: "TBC",
         time: "TBC",
         place: "TBC",
@@ -28,7 +28,7 @@ export const data_agenda = [
         level: "Beginner",
         kind: "Taller",
         small_description: "Inicia't al món del desenvolupament web modern i fes el teu primer lloc web!",
-        description: "Una introducció al desenvolupament web modern, on aprendràs els conceptes bàsics de HTML, CSS i JavaScript. També parlarem de frameworks, en concret NextJS! Aquest taller està pensat per a aquells que vulguin començar a programar i no sàpiguen per on començar. No cal cap coneixement prèvi!",
+        description: "Una introducció al desenvolupament web modern, on aprendràs els conceptes bàsics de HTML, CSS i JavaScript. També parlarem de frameworks, en concret NextJS! Aquest taller està pensat per a aquells que vulguin començar a programar i no sàpiguen per on començar. No cal cap coneixement previ!",
         date: "TBC",
         time: "TBC",
         place: "TBC",
@@ -43,6 +43,18 @@ export const data_agenda = [
 
         description: "En Jordi Cortadella i Ferran Marqués, professors de la Universitat Politècnica de Catalunya, ofereixen una jornada de portes obertes on s’exposen els diversos estudis vinculats amb la ciència i enginyeria de dades. Xerrada adreçada principalment a estudiants de batxillerat.",
         date: "TBC",
+        place: "TBC",
+        lang: "CA"
+    },
+    {
+        title:"Què és el Big Data en Genòmica Mèdica i què en podem fer?",
+        author: "Arcadi Navarro",
+        level: "TBC",
+        kind: "Conferència",
+        small_description: "Aviat...",
+
+        description: "Aviat...",
+        date: "11 de maig",
         place: "TBC",
         lang: "CA"
     }

@@ -92,12 +92,6 @@ const FAQ = () => {
             Sí, us proporcionarem Wi-Fi gratuït!
           </div>
           <div className='FAQquestion'>
-            Fins a quin dia tinc per apuntar-me?
-          </div>
-          <div className='FAQanswer'>
-            Les inscripcions romandran obertes fins que s&apos;assoleixi la capacitat màxima. Com a màxim, tancarem les inscripcions el dia <strong>8 de maig</strong>.
-          </div>
-          <div className='FAQquestion'>
             No tinc gaire coneixement sobre el món de les dades. Em recomaneu venir?
           </div>
           <div className='FAQanswer'>

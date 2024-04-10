@@ -47,7 +47,7 @@ export const data_agenda = [
         lang: "CA"
     },
     {
-        title:"Què és el Big Data en Genòmica Mèdica i què en podem fer?",
+        title:"Què és el Big Data en Genòmica Mèdica?",
         author: "Arcadi Navarro",
         level: "TBC",
         kind: "Conferència",

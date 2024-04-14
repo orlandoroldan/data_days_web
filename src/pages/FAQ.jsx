@@ -15,7 +15,7 @@ const FAQ = () => {
             A quina hora comença i acaba l&apos;esdeveniment?
           </div>
           <div className="FAQanswer">
-            Dissabte, Data Days comença a les 10h i acaba a les 22h. Diumenge, comença a les 11h i acaba a les 18h.
+            Dissabte, Data Days comença a les 10h i acaba a les 22h. Diumenge, comença a les 11.30h i acaba a les 19.30h.
           </div>
           <div className="FAQquestion">
             A quina hora és cada activitat?
